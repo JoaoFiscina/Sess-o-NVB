@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+﻿/** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -18,14 +18,18 @@ export default {
           600: "#6d8739",
           500: "#96ae57",
           300: "#d8e3b5",
+          200: "#e4eccb",
           100: "#eef4de",
+          50: "#f7faf0",
         },
         stone: {
-          50: "#f7f5ef",
-          100: "#f0ede3",
-          150: "#e8e2d6",
-          200: "#ddd5c4",
+          800: "#3f3b33",
           700: "#5c564b",
+          500: "#938c7f",
+          200: "#ddd5c4",
+          150: "#e8e2d6",
+          100: "#f0ede3",
+          50: "#f7f5ef",
         },
         alert: "#da5c2d",
       },
@@ -57,3 +61,4 @@ export default {
   },
   plugins: [],
 };
+
