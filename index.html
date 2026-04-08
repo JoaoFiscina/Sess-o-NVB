@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sessão interativa sobre neoplasias de vias biliares, com revisão anatômica, colangiocarcinoma e câncer de vesícula biliar."
+    />
+    <title>Neoplasias de Vias Biliares</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <button
+        id="mobileMenuButton"
+        class="mobile-menu-button"
+        type="button"
+        aria-label="Abrir menu lateral"
+        data-mobile-toggle
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div id="mobileOverlay" class="mobile-overlay" aria-hidden="true" data-overlay-close></div>
+
+      <aside id="sidebar" class="sidebar" aria-label="Navegação lateral">
+        <div id="sidebarBrand" class="sidebar-brand"></div>
+        <nav id="sidebarNav" class="sidebar-nav"></nav>
+      </aside>
+
+      <main class="main-content">
+        <div id="siteContent" class="page-stack"></div>
+      </main>
+
+      <button
+        id="backToTopButton"
+        class="back-to-top"
+        type="button"
+        aria-label="Voltar ao topo"
+        data-go-top
+      >
+        ↑
+      </button>
+    </div>
+
+    <div id="imageModal" class="image-modal" aria-hidden="true">
+      <div class="image-modal__backdrop" data-modal-close></div>
+      <div class="image-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="imageModalTitle">
+        <div class="image-modal__header">
+          <div>
+            <p id="imageModalTitle" class="image-modal__title"></p>
+            <p id="imageModalDescription" class="image-modal__description"></p>
+          </div>
+          <div class="image-modal__actions">
+            <button
+              id="modalPrevButton"
+              class="icon-button"
+              type="button"
+              aria-label="Imagem anterior"
+            >
+              ←
+            </button>
+            <button
+              id="modalNextButton"
+              class="icon-button"
+              type="button"
+              aria-label="Próxima imagem"
+            >
+              →
+            </button>
+            <button class="icon-button" type="button" aria-label="Fechar modal" data-modal-close>
+              ✕
+            </button>
+          </div>
+        </div>
+        <div class="image-modal__body">
+          <img id="imageModalImg" src="" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
