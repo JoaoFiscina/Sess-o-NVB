@@ -1,4 +1,4 @@
-﻿import { FileImage, Layers3, MoveRight, ShieldCheck } from "lucide-react";
+﻿import { ArrowRight, FileImage, Layers3, ShieldCheck } from "lucide-react";
 import { useMemo, useState } from "react";
 import SectionHeader from "../components/SectionHeader";
 import Tabs from "../components/Tabs";
@@ -127,7 +127,7 @@ export default function AnatomySection({ anatomy, overview, onOpenImage }) {
           <div className="grid gap-5">
             <div className="rounded-[2rem] border border-stone-200 bg-white/90 p-6 shadow-sm">
               <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.24em] text-olive-700">
-                <MoveRight className="h-4 w-4" />
+                <ArrowRight className="h-4 w-4" />
                 Conceitos-chave
               </div>
               <div className="mt-4 space-y-3">
@@ -158,3 +158,4 @@ export default function AnatomySection({ anatomy, overview, onOpenImage }) {
     </div>
   );
 }
+

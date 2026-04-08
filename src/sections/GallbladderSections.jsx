@@ -1,4 +1,4 @@
-﻿import { AlertTriangle, ScanSearch, Syringe } from "lucide-react";
+﻿import { AlertTriangle, ArrowRight, FileImage } from "lucide-react";
 import { useMemo, useState } from "react";
 import Accordion from "../components/Accordion";
 import SectionHeader from "../components/SectionHeader";
@@ -89,7 +89,7 @@ export default function GallbladderSections({ gallbladder, polypPorcelain, onOpe
             <Accordion key={activeTab.id} items={accordionItems} defaultOpen={accordionItems[0]?.id} />
             <div className="rounded-[2rem] border border-olive-700/15 bg-olive-100/60 p-5 text-sm leading-7 text-stone-700">
               <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-olive-800">
-                <ScanSearch className="h-4 w-4" />
+                <FileImage className="h-4 w-4" />
                 Leitura dirigida
               </div>
               <p className="mt-3">
@@ -156,7 +156,7 @@ export default function GallbladderSections({ gallbladder, polypPorcelain, onOpe
               }
               className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-olive-800"
             >
-              <Syringe className="h-4 w-4" />
+              <ArrowRight className="h-4 w-4" />
               Abrir fluxograma de conduta
             </button>
           </article>
@@ -202,4 +202,5 @@ export default function GallbladderSections({ gallbladder, polypPorcelain, onOpe
     </div>
   );
 }
+
 

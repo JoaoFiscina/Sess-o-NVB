@@ -1,4 +1,4 @@
-﻿import { ArrowRight, FlaskConical, GalleryHorizontal, Microscope, Orbit, ShieldPlus } from "lucide-react";
+﻿import { ArrowRight, FileImage, FlaskConical, Layers3, Microscope, ShieldCheck } from "lucide-react";
 import { useDeferredValue, useMemo, useState } from "react";
 import Accordion from "../components/Accordion";
 import SectionHeader from "../components/SectionHeader";
@@ -193,7 +193,7 @@ export default function CholangiocarcinomaSections({ cca, gallery, bismuth, tnm,
                     }
                     className="inline-flex items-center gap-2 font-semibold text-olive-800"
                   >
-                    <GalleryHorizontal className="h-4 w-4" />
+                    <FileImage className="h-4 w-4" />
                     Abrir
                   </button>
                 </div>
@@ -240,7 +240,7 @@ export default function CholangiocarcinomaSections({ cca, gallery, bismuth, tnm,
               className="rounded-[1.5rem] border border-stone-200 bg-white/90 p-4 text-left text-sm leading-7 text-stone-700 shadow-sm transition hover:border-olive-500"
             >
               <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-olive-700">
-                <Orbit className="h-4 w-4" />
+                <Layers3 className="h-4 w-4" />
                 Visão geral
               </div>
               <p className="mt-3">Abrir esquema resumido com todos os tipos em sequência.</p>
@@ -255,7 +255,7 @@ export default function CholangiocarcinomaSections({ cca, gallery, bismuth, tnm,
             </article>
             <article className="rounded-[2rem] border border-olive-700/15 bg-olive-100/60 p-6 shadow-sm">
               <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-olive-800">
-                <ShieldPlus className="h-4 w-4" />
+                <ShieldCheck className="h-4 w-4" />
                 Associação cirúrgica citada
               </div>
               <p className="mt-4 text-sm leading-7 text-stone-800">{currentBismuth.surgicalHint}</p>
@@ -462,7 +462,7 @@ export default function CholangiocarcinomaSections({ cca, gallery, bismuth, tnm,
         <div className="relative z-10 mt-8 grid gap-6 xl:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] xl:items-start">
           <div className="space-y-4 rounded-[2rem] border border-stone-200 bg-white/90 p-6 shadow-sm">
             <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-olive-700">
-              <ShieldPlus className="h-4 w-4" />
+              <ShieldCheck className="h-4 w-4" />
               CCA extra-hepático distal e adjuvância
             </div>
             <BulletList items={treatment.distalNotes} />
@@ -544,4 +544,5 @@ export default function CholangiocarcinomaSections({ cca, gallery, bismuth, tnm,
     </div>
   );
 }
+
 

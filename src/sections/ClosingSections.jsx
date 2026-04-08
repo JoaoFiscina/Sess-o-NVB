@@ -1,4 +1,4 @@
-﻿import { BookOpenText, CircleCheckBig, FileImage, RotateCcw } from "lucide-react";
+﻿import { BookOpen, CheckCircle2, FileImage, RotateCcw } from "lucide-react";
 import { useMemo, useState } from "react";
 import SectionHeader from "../components/SectionHeader";
 
@@ -50,7 +50,7 @@ export default function ClosingSections({ quiz, references, footer, onOpenImage 
             {selectedOption ? (
               <div className="mt-6 rounded-[1.75rem] border border-stone-200 bg-stone-50 p-5">
                 <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-olive-700">
-                  <CircleCheckBig className="h-4 w-4" />
+                  <CheckCircle2 className="h-4 w-4" />
                   Feedback imediato
                 </div>
                 <p className="mt-3 text-sm leading-7 text-stone-700">{selectedOption.feedback}</p>
@@ -103,7 +103,7 @@ export default function ClosingSections({ quiz, references, footer, onOpenImage 
           {references.groups.map((group) => (
             <article key={group.title} className="rounded-[2rem] border border-stone-200 bg-white/90 p-6 shadow-sm">
               <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-olive-700">
-                <BookOpenText className="h-4 w-4" />
+                <BookOpen className="h-4 w-4" />
                 {group.title}
               </div>
               <div className="mt-4 space-y-3">
@@ -141,3 +141,4 @@ export default function ClosingSections({ quiz, references, footer, onOpenImage 
     </div>
   );
 }
+
