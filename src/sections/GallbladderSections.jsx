@@ -86,7 +86,7 @@ export default function GallbladderSections({ gallbladder, polypPorcelain, onOpe
           </div>
 
           <div className="space-y-5">
-            <Accordion items={accordionItems} defaultOpen={accordionItems[0]?.id} />
+            <Accordion key={activeTab.id} items={accordionItems} defaultOpen={accordionItems[0]?.id} />
             <div className="rounded-[2rem] border border-olive-700/15 bg-olive-100/60 p-5 text-sm leading-7 text-stone-700">
               <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-olive-800">
                 <ScanSearch className="h-4 w-4" />
@@ -202,3 +202,4 @@ export default function GallbladderSections({ gallbladder, polypPorcelain, onOpe
     </div>
   );
 }
+

@@ -54,7 +54,7 @@ export default function CholangiocarcinomaSections({ cca, gallery, bismuth, tnm,
             <div className="rounded-[2rem] border border-stone-200 bg-white/90 p-6 shadow-sm">
               <p className="text-sm leading-7 text-stone-700">{currentCcaTab.intro}</p>
             </div>
-            <Accordion items={accordionItems} defaultOpen={accordionItems[0]?.id} />
+            <Accordion key={currentCcaTab.id} items={accordionItems} defaultOpen={accordionItems[0]?.id} />
           </div>
 
           <div className="grid gap-5">
@@ -544,3 +544,4 @@ export default function CholangiocarcinomaSections({ cca, gallery, bismuth, tnm,
     </div>
   );
 }
+
